@@ -1,136 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Arctic Travels",
+  "description": "Curating the world's finest ski & snowboard holidays.",
+  "url": "https://arctictravels.com",
+  "areaServed": ["Japan", "France", "Switzerland", "Canada"]
+}
+</script>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arctic Travels – Plan the Perfect Winter Trip</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/jpg" href="icon-travel.svg">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Plan your perfect winter ski trip with Arctic Travels. Explore 20+ world-class resorts in Japan, France, Switzerland & more. Expert agents, best price guarantee.">
+  <meta property="og:title" content="Arctic Travels – Plan the Perfect Winter Trip">
+  <meta property="og:description" content="Curated ski holidays across 20+ world-class resorts. Expert agents, best prices.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=1200">
+  <title>Arctic Travels – Plan the Perfect Winter Trip</title>
+  <link rel="canonical" href="https://arctic-travel.vercel.app/">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="icon-travel.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
       <a href = "" class="logo">Arctic<span>Travels</span></a>
       <ul class="nav-links">
-          <li><a href="javascript:void(0)">Regions</a></li>
-          <li><a href="javascript:void(0)">Lodging</a></li>
-          <li><a href="javascript:void(0)">Resorts</a></li>
-          <li><a href="javascript:void(0)">Passes</a></li>
+          <li><a href="#">Regions</a></li>
+          <li><a href="#">Lodging</a></li>
+          <li><a href="#">Resorts</a></li>
+          <li><a href="#">Passes</a></li>
       </ul>
       <button class="nav-cta">Book Here</button>
   </nav>
 
-  <section class="hero">
-    <p class="hero-eyebrow">ArcticTravels.com &nbsp;·&nbsp; Est. Whistler, Canada</p>
-    <h1>Plan the <em>perfect</em><br>winter trip</h1>
-    <p class="hero-sub">Easily plan your ideal ski trip from home with the help of professionals</p>
-    <div class="hero-actions">
-      <button class="btn-primary" id="book" onclick="alert('Booking flow coming soon!')">Book Here</button>
-      <button class="btn-ghost">Explore Options</button>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <p class="hero-eyebrow">ArcticTravels.com &nbsp;·&nbsp; Est. Whistler, Canada</p>
+      <h1>Plan the <em>perfect</em><br>winter trip</h1>
+      <p class="hero-sub">Easily plan your ideal ski trip from home with the help of professionals</p>
+      <div class="hero-actions">
+        <button class="btn-primary" id="book" onclick="alert('Booking flow coming soon!')">Book Here</button>
+        <button class="btn-ghost">Explore Options</button>
+      </div>
+    </section>
 
-  <div class="categories">
-    <div class="cat-item" id="regions">
-      <span class="cat-icon">🏔️</span>
-      <h3>Regions</h3>
-      <p>Explore ski zones across Europe, Asia & North America</p>
-      <span class="cat-arrow">→</span>
+    <div class="categories">
+      <div class="cat-item" id="regions">
+        <span class="cat-icon">🏔️</span>
+        <h3>Regions</h3>
+        <p>Explore ski zones across Europe, Asia & North America</p>
+        <span class="cat-arrow">→</span>
+      </div>
+      <div class="cat-item" id="lodging">
+        <span class="cat-icon">🏨</span>
+        <h3>Lodging</h3>
+        <p>Curated chalets, lodges & alpine resorts</p>
+        <span class="cat-arrow">→</span>
+      </div>
+      <div class="cat-item" id="resorts">
+        <span class="cat-icon">⛷️</span>
+        <h3>Resorts</h3>
+        <p>20+ world-class ski resorts handpicked for you</p>
+        <span class="cat-arrow">→</span>
+      </div>
+      <div class="cat-item" id="passes">
+        <span class="cat-icon">🎫</span>
+        <h3>Passes</h3>
+        <p>Flexible multi-resort passes for every itinerary</p>
+        <span class="cat-arrow">→</span>
+      </div>
     </div>
-    <div class="cat-item" id="lodging">
-      <span class="cat-icon">🏨</span>
-      <h3>Lodging</h3>
-      <p>Curated chalets, lodges & alpine resorts</p>
-      <span class="cat-arrow">→</span>
+    <div class="cat-cta-row">
+      <button class="btn-cta-large" onclick="alert('Booking flow coming soon!')">Book Here</button>
     </div>
-    <div class="cat-item" id="resorts">
-      <span class="cat-icon">⛷️</span>
-      <h3>Resorts</h3>
-      <p>20+ world-class ski resorts handpicked for you</p>
-      <span class="cat-arrow">→</span>
-    </div>
-    <div class="cat-item" id="passes">
-      <span class="cat-icon">🎫</span>
-      <h3>Passes</h3>
-      <p>Flexible multi-resort passes for every itinerary</p>
-      <span class="cat-arrow">→</span>
-    </div>
-  </div>
-  <div class="cat-cta-row">
-    <button class="btn-cta-large" onclick="alert('Booking flow coming soon!')">Book Here</button>
-  </div>
 
-  <section class="section">
-    <p class="section-label reveal">Top Destinations</p>
-    <h2 class="section-title reveal">The world's finest<br><em>ski resorts</em>, curated</h2>
-    <div class="destinations-grid">
-      <div class="dest-card reveal">
-        <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?w=800&q=75" alt="Niseko Japan" loading="lazy"/>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <p class="dest-country">Japan</p>
-          <h3 class="dest-name">Niseko</h3>
-          <span class="dest-tag">Powder Paradise</span>
-        </div>
-      </div>
-      <div class="dest-card reveal">
-        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=75" alt="Chamonix France" loading="lazy"/>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <p class="dest-country">France</p>
-          <h3 class="dest-name">Chamonix</h3>
-          <span class="dest-tag">Expert Terrain</span>
-        </div>
-      </div>
-      <div class="dest-card reveal">
-        <img src="https://images.unsplash.com/photo-1555448248-2571daf6344b?w=800&q=75" alt="Zermatt Switzerland" loading="lazy"/>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <p class="dest-country">Switzerland</p>
-          <h3 class="dest-name">Zermatt</h3>
-          <span class="dest-tag">Year-Round Skiing</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="why-section">
-    <div class="why-visual reveal">
-      <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=900&q=75" alt="Ski lift mountain" loading="lazy"/>
-      <div class="why-badge">
-        <span>20+</span>
-        <span>Resorts</span>
-      </div>
-    </div>
-    <div class="why-content">
-      <p class="section-label reveal">Why Arctic Travels</p>
-      <h2 class="section-title reveal">Luxury meets the<br><em>mountain</em></h2>
-      <div class="why-features">
-        <div class="why-feat reveal">
-          <span class="feat-num">01.</span>
-          <div class="feat-body">
-            <h4>Expert Travel Agents</h4>
-            <p>Ask questions and get personalised advice from our specialized ski travel professionals anytime.</p>
+    <section class="section">
+      <p class="section-label reveal">Top Destinations</p>
+      <h2 class="section-title reveal">The world's finest<br><em>ski resorts</em>, curated</h2>
+      <div class="destinations-grid">
+        <div class="dest-card reveal">
+          <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?w=800&q=75" alt="Niseko Japan" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <p class="dest-country">Japan</p>
+            <h3 class="dest-name">Niseko</h3>
+            <span class="dest-tag">Powder Paradise</span>
           </div>
         </div>
-        <div class="why-feat reveal">
-          <span class="feat-num">02.</span>
-          <div class="feat-body">
-            <h4>Plan Your Trip Online</h4>
-            <p>Build and track every detail of your ski holiday directly on ArcticTravels.com — at your pace, from home.</p>
+        <div class="dest-card reveal">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=75" alt="Chamonix France" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <p class="dest-country">France</p>
+            <h3 class="dest-name">Chamonix</h3>
+            <span class="dest-tag">Expert Terrain</span>
           </div>
         </div>
-        <div class="why-feat reveal">
-          <span class="feat-num">03.</span>
-          <div class="feat-body">
-            <h4>Best Price Guarantee</h4>
-            <p>We combine uncompromising luxury with the best possible pricing across all 20+ resort destinations.</p>
+        <div class="dest-card reveal">
+          <img src="https://images.unsplash.com/photo-1555448248-2571daf6344b?w=800&q=75" alt="Zermatt Switzerland" loading="lazy"/>
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <p class="dest-country">Switzerland</p>
+            <h3 class="dest-name">Zermatt</h3>
+            <span class="dest-tag">Year-Round Skiing</span>
           </div>
         </div>
       </div>
+    </section>
+
+    <div class="why-section">
+      <div class="why-visual reveal">
+        <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=900&q=75" alt="Ski lift mountain" loading="lazy"/>
+        <div class="why-badge">
+          <span>20+</span>
+          <span>Resorts</span>
+        </div>
+      </div>
+      <div class="why-content">
+        <p class="section-label reveal">Why Arctic Travels</p>
+        <h2 class="section-title reveal">Luxury meets the<br><em>mountain</em></h2>
+        <div class="why-features">
+          <div class="why-feat reveal">
+            <span class="feat-num">01.</span>
+            <div class="feat-body">
+              <h4>Expert Travel Agents</h4>
+              <p>Ask questions and get personalised advice from our specialized ski travel professionals anytime.</p>
+            </div>
+          </div>
+          <div class="why-feat reveal">
+            <span class="feat-num">02.</span>
+            <div class="feat-body">
+              <h4>Plan Your Trip Online</h4>
+              <p>Build and track every detail of your ski holiday directly on ArcticTravels.com — at your pace, from home.</p>
+            </div>
+          </div>
+          <div class="why-feat reveal">
+            <span class="feat-num">03.</span>
+            <div class="feat-body">
+              <h4>Best Price Guarantee</h4>
+              <p>We combine uncompromising luxury with the best possible pricing across all 20+ resort destinations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <div class="footer-top">
@@ -141,28 +159,28 @@
       <div class="footer-col">
         <h5>Explore</h5>
         <ul>
-          <li><a href="javascript:void(0)">Regions</a></li>
-          <li><a href="javascript:void(0)">Lodging</a></li>
-          <li><a href="javascript:void(0)">Resorts</a></li>
-          <li><a href="javascript:void(0)">Passes</a></li>
+          <li><a href="#">Regions</a></li>
+          <li><a href="#">Lodging</a></li>
+          <li><a href="#">Resorts</a></li>
+          <li><a href="#">Passes</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Destinations</h5>
         <ul>
-          <li><a href="javascript:void(0)">Niseko, Japan</a></li>
-          <li><a href="javascript:void(0)">Chamonix, France</a></li>
-          <li><a href="javascript:void(0)">Zermatt, Switzerland</a></li>
-          <li><a href="javascript:void(0)">View all 20+</a></li>
+          <li><a href="#">Niseko, Japan</a></li>
+          <li><a href="#">Chamonix, France</a></li>
+          <li><a href="#">Zermatt, Switzerland</a></li>
+          <li><a href="#">View all 20+</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Company</h5>
         <ul>
-          <li><a href="javascript:void(0)">About Us</a></li>
-          <li><a href="javascript:void(0)">Our Agents</a></li>
-          <li><a href="javascript:void(0)">Contact</a></li>
-          <li><a href="javascript:void(0)">ArcticTravels.com</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Agents</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">ArcticTravels.com</a></li>
         </ul>
       </div>
     </div>
